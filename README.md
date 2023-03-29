@@ -9,11 +9,11 @@ We have two mutations in our selection set:
 
 ```graphql
 mutation {
-  createFoo(input: {id: 1}) {
+  createFoo(input: {id: "1"}) {
     id
   }
 
-  createBar(input: {id: 1}) {
+  createBar(input: {id: "1"}) {
     id
   }
 }
@@ -21,3 +21,17 @@ mutation {
 
 But we want these mutations to execute together rather than sequentially and 
 independently.
+
+## Getting started
+
+### Start the server
+
+Start the GraphQL server on port 8081:
+
+```shell
+make run
+```
+
+### Hit the server
+
+Visit [localhost:9097](http://localhost:9097/) and run the above mutation!
