@@ -1,0 +1,24 @@
+# GraphQL schema example
+#
+# https://gqlgen.com/getting-started/
+
+input CreateFooInput {
+  id: String!
+}
+
+input CreateBarInput {
+  id: String!
+}
+
+type Foo {
+  id: String!
+}
+
+type Bar {
+  id: String!
+}
+
+type Mutation {
+  createFoo(input: CreateFooInput!): Foo!
+  createBar(input: CreateBarInput!): Bar!
+}
