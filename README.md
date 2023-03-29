@@ -26,7 +26,7 @@ independently.
 
 ### Start the server
 
-Start the GraphQL server on port 8081:
+Start the GraphQL server on port 9097:
 
 ```shell
 make run
